@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandu Travels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<style>
+    html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+   margin: 0;
+   padding: 0;
+}
+div{
+    box-sizing: border-box;
+}
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: black;
+color:white;
+height: 40px;
+padding-left: 15px;
+padding-right: 15px;
+position: fixed;
+left: 0;
+right: 0;
+z-index: 10;
+}
+.white-link:visited {
+     color: white
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 40px;
+    z-index: 10;
+    font-display: bold;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 80px;
+    border-bottom: 1px solid rgb(151, 144, 144);
+}
+.nav-bar .logo-text{
+     color: rgb(17, 195, 17);
+     padding-left: 15px;
+     font-size: 600;
+}
+.bg-img{
+    height: 600px;
+}
+.nav-bar-right{
+   display: flex;
+   color:white;
+   gap: 10px;
+   
+
+}
+.main-container{
+   display: flex;
+   height: 600px;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   color: olivedrab;
+}
+.bg-img{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    top: 0;
+    filter: brightness(0.4);
+}
+.nav-link{
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-link.active{
+    background-color: rgba(164, 154, 154, 0.497);
+    color: rgb(17, 195, 17);
+    border-bottom: 2px solid rgb(17, 195, 17);
+}
+.nav-link:hover{
+    background-color: rgba(164, 154, 154, 0.497);
+}
+ul{
+    align-items: center;
+    justify-content: center;
+}
+.fakebox{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+    height: 50px;
+    align-items: center;
+    padding-left: 25px;
+}
+.fakebox>input{
+    flex: 1;
+    outline: none;
+    border: none;
+}
+.fakebox>button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: green;
+    border-radius: 20px;
+}
+@media screen and (max-width:767px) {
+    .header {
+        display: none;
+    }
+    .nav-bar{
+        top: 0;
+    }
+    .bg-img {
+        height: 100%;
+        width: Auto;
+    }
+    .main-container {
+        height:600px;
+    }
+    .nav-bar-right {
+      flex-direction: column;
+      position: fixed;
+      background-color: rgb(54, 54, 54);
+      right: 0;
+      top: 80px;
+      align-items: start;
+    }
+    .nav-link{
+        width: 100px;
+    }
+}
+
+</style>
+<body>
+   <header class="header">
+   <div class="header-Left">
+    <i class="fa-solid fa-location-dot"></i>
+     Bangalore, Andhra Pradesh, India
+    <a class="white-link" href="tel:+91-93473 42670"><i class="fa-solid fa-phone"></i>
+        +91-93473 42670
+    </a>
+    <a class="white-link" href="address:pandutours@gmail.com"><i class="fa-solid fa-envelope"></i>
+        pandutours@gmail.com
+    </a>
+   </div>
+   <div class="header-right">
+    <i class="fa-brands fa-instagram"></i>   
+    <i class="fa-brands fa-twitter"></i>    
+   </div>
+   </header>
+   <nav class="nav-bar">
+      <div class="nav-bar-left">
+        <h1 class="logo-text">Liv Trip</h1>
+    </div>
+    <div class="nav-bar-right">
+        <a class="white-link nav-link" href="#">Home</a>
+        <a class="white-link nav-link active" href="#About-section">About</a>
+        <a class="white-link nav-link" href="#Gallery-section">Gallery</a>
+        <a class="white-link nav-link" href="#Destination-section">Destination</a>
+    </div>
+   </nav>
+   <main class="main-container">
+        <img class="bg-img" src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsJTIwZnJpZW5kc3xlbnwwfHwwfHx8MA%3D%3D">
+        <div class="Search-box">
+            <h1>Tell us how can we help you</h1>
+            <div class="fakebox">
+                <input placeholder="E.g.Goa "/>
+                <button>Search</button>
+            </div>
+        </div>
+   </main>
+   <section id="About-section" class="About-section">
+     <h1>ABOUT</h1>
+     <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque iste ea quam repellendus accusamus alias quae? Est rerum alias, modi nemo velit officiis ut culpa maiores aut inventore quaerat. Cum.
+     Quas laborum odit fuga aperiam fugiat, aliquid labore obcaecati vel deserunt culpa nisi dignissimos error optio ea odio dolor eius. Optio repellendus, quae non consectetur fugit nulla saepe magnam provident.
+     Provident, sequi nihil ipsam autem dignissimos amet earum libero nulla exercitationem ipsa, similique ab deserunt! Labore molestias modi voluptate consectetur aut accusamus eligendi dolorum ut nihil pariatur. Provident, delectus ipsum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque iste ea quam repellendus accusamus alias quae? Est rerum alias, modi nemo velit officiis ut culpa maiores aut inventore quaerat. Cum.
+     Quas laborum odit fuga aperiam fugiat, aliquid labore obcaecati vel deserunt culpa nisi dignissimos error optio ea odio dolor eius. Optio repellendus, quae non consectetur fugit nulla saepe magnam provident.
+     Provident, sequi nihil ipsam autem dignissimos amet earum libero nulla exercitationem ipsa, similique ab deserunt! Labore molestias modi voluptate consectetur aut accusamus eligendi dolorum ut nihil pariatur. Provident, delectus ipsumLorem ipsum dolor, sit amet consectetur adipisicing elit. Neque iste ea quam repellendus accusamus alias quae? Est rerum alias, modi nemo velit officiis ut culpa maiores aut inventore quaerat. Cum.
+     Quas laborum odit fuga aperiam fugiat, aliquid labore obcaecati vel deserunt culpa nisi dignissimos error optio ea odio dolor eius. Optio repellendus, quae non consectetur fugit nulla saepe magnam provident.
+     Provident, sequi nihil ipsam autem dignissimos amet earum libero nulla exercitationem ipsa, similique ab deserunt! Labore molestias modi voluptate consectetur aut accusamus eligendi dolorum ut nihil pariatur. Provident, delectus ipsumLorem ipsum dolor, sit amet consectetur adipisicing elit. Neque iste ea quam repellendus accusamus alias quae? Est rerum alias, modi nemo velit officiis ut culpa maiores aut inventore quaerat. Cum.
+     Quas laborum odit fuga aperiam fugiat, aliquid labore obcaecati vel deserunt culpa nisi dignissimos error optio ea odio dolor eius. Optio repellendus, quae non consectetur fugit nulla saepe magnam provident.
+     Provident, sequi nihil ipsam autem dignissimos amet earum libero nulla exercitationem ipsa, similique ab deserunt! Labore molestias modi voluptate consectetur aut accusamus eligendi dolorum ut nihil pariatur. Provident, delectus ipsum</P>
+   </section>
+   <section id = "Gallery-section" class="Gallery-section">
+       <h1>Destination</h1>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et impedit praesentium dolorem eum magnam voluptate odio harum. Eveniet cumque similique id nihil labore non eum dicta, fugit rerum fugiat autem.
+       Sed aliquam non rem aperiam magnam dolor? Vero accusantium itaque, excepturi id architecto neque quam ex laboriosam quia libero molestiae odio et suscipit facilis, enim maxime? Eius, a temporibus? Veniam?
+       Quibusdam eaque ducimus repellat magnam officia culpa quam aspernatur facilis alias, nemo molestiae corrupti dolore ullam numquam cum blanditiis! Itaque ipsa unde, rerum laboriosam voluptatem optio quis culpa obcaecati nostrum.
+       Itaque amet quam consequuntur dolorum veniam dolorem at reiciendis quo aliquam perspiciatis! Debitis, natus excepturi sed soluta nam, nemo dolore modi reprehenderit placeat consequuntur culpa magni beatae maiores architecto! Molestiae.
+       Aspernatur, possimus. Dignissimos atque sequi blanditiis quasi, libero cupiditate culpa impedit magni saepe necessitatibus architecto perspiciatis debitis, fugiat quo corrupti itaque! Eum modi molestias alias repellendus consequuntur numquam praesentium accusamus?
+       Temporibus tempore ad est tempora animi laudantium possimus corporis. Facilis accusamus eveniet id pariatur, asperiores repellendus debitis suscipit sit fuga vitae et neque quaerat? Maiores error quam doloribus enim ipsam.
+       Atque ducimus commodi exercitationem itaque earum, quos tempora pariatur natus facilis omnis sint nam soluta error quisquam harum ab. Quod quos accusamus, veritatis rem amet iure quae ut consequatur blanditiis!
+       Optio asperiores dicta amet architecto nemo perspiciatis enim, ducimus omnis explicabo quos nostrum quidem possimus cupiditate est. Exercitationem atque labore distinctio illo qui. Aliquid minima soluta, voluptatibus laboriosam ipsa quia.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, qui ad! Nobis, facilis numquam? Molestias ex ducimus repellendus dolor sunt, vero, id rerum repudiandae minus voluptas dolores magnam excepturi temporibus!
+       Dolorem impedit nesciunt explicabo deserunt provident nostrum debitis quis maxime alias voluptates iure dolor itaque, ad eum labore repellendus nobis consequatur illo! Assumenda in iusto repellendus, sapiente reiciendis possimus amet.
+       Expedita iste accusamus illo similique quaerat provident earum aut laudantium accusantium vero aperiam, veniam et perferendis architecto est doloribus consectetur, iure saepe, inventore dolor maxime voluptas eius totam iusto. Ea.
+       Voluptates similique dolore illo voluptatum provident ex dolor perspiciatis ea cupiditate eaque neque sequi ad consectetur nemo laudantium vel quo, eveniet odit enim eligendi velit nesciunt quos ab. Eaque, sed?
+       Deleniti non ipsam ipsa nam sit atque illo excepturi laborum ab soluta. Illo ratione, unde laudantium repellat quae consequatur, natus quisquam veritatis quaerat neque voluptatum similique iste in velit dolores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, qui ad! Nobis, facilis numquam? Molestias ex ducimus repellendus dolor sunt, vero, id rerum repudiandae minus voluptas dolores magnam excepturi temporibus!
+       Dolorem impedit nesciunt explicabo deserunt provident nostrum debitis quis maxime alias voluptates iure dolor itaque, ad eum labore repellendus nobis consequatur illo! Assumenda in iusto repellendus, sapiente reiciendis possimus amet.
+       Expedita iste accusamus illo similique quaerat provident earum aut laudantium accusantium vero aperiam, veniam et perferendis architecto est doloribus consectetur, iure saepe, inventore dolor maxime voluptas eius totam iusto. Ea.
+       Voluptates similique dolore illo voluptatum provident ex dolor perspiciatis ea cupiditate eaque neque sequi ad consectetur nemo laudantium vel quo, eveniet odit enim eligendi velit nesciunt quos ab. Eaque, sed?
+       Deleniti non ipsam ipsa nam sit atque illo excepturi laborum ab soluta. Illo ratione, unde laudantium repellat quae consequatur, natus quisquam veritatis quaerat neque voluptatum similique iste in velit dolores.</p>
+   </section>
+   <section id = "Destination-section" class="Destination-section">
+        <h1>Gallery</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, qui ad! Nobis, facilis numquam? Molestias ex ducimus repellendus dolor sunt, vero, id rerum repudiandae minus voluptas dolores magnam excepturi temporibus!
+        Dolorem impedit nesciunt explicabo deserunt provident nostrum debitis quis maxime alias voluptates iure dolor itaque, ad eum labore repellendus nobis consequatur illo! Assumenda in iusto repellendus, sapiente reiciendis possimus amet.
+        Expedita iste accusamus illo similique quaerat provident earum aut laudantium accusantium vero aperiam, veniam et perferendis architecto est doloribus consectetur, iure saepe, inventore dolor maxime voluptas eius totam iusto. Ea.
+        Voluptates similique dolore illo voluptatum provident ex dolor perspiciatis ea cupiditate eaque neque sequi ad consectetur nemo laudantium vel quo, eveniet odit enim eligendi velit nesciunt quos ab. Eaque, sed?
+        Deleniti non ipsam ipsa nam sit atque illo excepturi laborum ab soluta. Illo ratione, unde laudantium repellat quae consequatur, natus quisquam veritatis quaerat neque voluptatum similique iste in velit dolores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, qui ad! Nobis, facilis numquam? Molestias ex ducimus repellendus dolor sunt, vero, id rerum repudiandae minus voluptas dolores magnam excepturi temporibus!
+        Dolorem impedit nesciunt explicabo deserunt provident nostrum debitis quis maxime alias voluptates iure dolor itaque, ad eum labore repellendus nobis consequatur illo! Assumenda in iusto repellendus, sapiente reiciendis possimus amet.
+        Expedita iste accusamus illo similique quaerat provident earum aut laudantium accusantium vero aperiam, veniam et perferendis architecto est doloribus consectetur, iure saepe, inventore dolor maxime voluptas eius totam iusto. Ea.
+        Voluptates similique dolore illo voluptatum provident ex dolor perspiciatis ea cupiditate eaque neque sequi ad consectetur nemo laudantium vel quo, eveniet odit enim eligendi velit nesciunt quos ab. Eaque, sed?
+        Deleniti non ipsam ipsa nam sit atque illo excepturi laborum ab soluta. Illo ratione, unde laudantium repellat quae consequatur, natus quisquam veritatis quaerat neque voluptatum similique iste in velit dolores.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, qui ad! Nobis, facilis numquam? Molestias ex ducimus repellendus dolor sunt, vero, id rerum repudiandae minus voluptas dolores magnam excepturi temporibus!
+        Dolorem impedit nesciunt explicabo deserunt provident nostrum debitis quis maxime alias voluptates iure dolor itaque, ad eum labore repellendus nobis consequatur illo! Assumenda in iusto repellendus, sapiente reiciendis possimus amet.
+        Expedita iste accusamus illo similique quaerat provident earum aut laudantium accusantium vero aperiam, veniam et perferendis architecto est doloribus consectetur, iure saepe, inventore dolor maxime voluptas eius totam iusto. Ea.
+        Voluptates similique dolore illo voluptatum provident ex dolor perspiciatis ea cupiditate eaque neque sequi ad consectetur nemo laudantium vel quo, eveniet odit enim eligendi velit nesciunt quos ab. Eaque, sed?
+        Deleniti non ipsam ipsa nam sit atque illo excepturi laborum ab soluta. Illo ratione, unde laudantium repellat quae consequatur, natus quisquam veritatis quaerat neque voluptatum similique iste in velit dolores.</p>
+   </section>
+
+
+   <script>
+        window.addEventListener('scroll',onscroll);
+
+        function onscroll(){
+            let navBar = document.querySelector('.nav-bar');
+            if(window.scrollY > 100){
+               navBar.style.backgroundColor = '#020202';
+            }else{
+            navBar.style.backgroundColor = 'unset';
+            }
+        }
+   </script>
+</body>
+</html>
